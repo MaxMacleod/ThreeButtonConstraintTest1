@@ -9,10 +9,11 @@
 #import "ViewController.h"
 
 @interface ViewController () {
-    CGFloat _originalFirstButtonWidthConstant;
+    CGFloat _initialContainerWidthConstant;
 }
-@property (weak, nonatomic) IBOutlet UISlider *buttonWidthSlider;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *firstButtonWidthConstraint;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet UISlider *containerWidthSlider;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *containerWidthConstraint;
 - (IBAction)didChangeSliderValue:(id)sender;
 
 @end
@@ -23,8 +24,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    _originalFirstButtonWidthConstant = _firstButtonWidthConstraint.constant;
-    _buttonWidthSlider.value = 1.f;
+    _initialContainerWidthConstant = _containerWidthConstraint.constant;
+    _containerWidthSlider.value = 1.f;
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,7 +36,7 @@
 
 - (IBAction)didChangeSliderValue:(id)sender {
     UISlider *slider = sender;
-    NSLog(@"slider value %f _originalFirstButtonWidthConstraint %f", slider.value, _originalFirstButtonWidthConstant);
-    _firstButtonWidthConstraint.constant = slider.value * _originalFirstButtonWidthConstant;
+    NSLog(@"slider value %f _originalFirstButtonWidthConstraint %f", slider.value, _initialContainerWidthConstant);
+    _containerWidthConstraint.constant = slider.value * _initialContainerWidthConstant;
 }
 @end

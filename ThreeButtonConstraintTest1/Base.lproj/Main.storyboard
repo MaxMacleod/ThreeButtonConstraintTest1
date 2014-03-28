@@ -16,59 +16,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJe-wj-pUe">
-                                <rect key="frame" x="289" y="279" width="160" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="Voe-Qu-2s1"/>
-                                </constraints>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWR-bA-fVF">
-                                <rect key="frame" x="289" y="358" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Da-vU-BNf">
-                                <rect key="frame" x="274" y="436" width="265" height="157"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IaN-a8-OBT" userLabel="Container View">
+                                <rect key="frame" x="134" y="20" width="384" height="512"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJ4-4w-Uz2">
-                                        <rect key="frame" x="109" y="64" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJe-wj-pUe" userLabel="Button - Button One">
+                                        <rect key="frame" x="59" y="52" width="160" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="One">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJ4-4w-Uz2" userLabel="Button - Button Two">
+                                        <rect key="frame" x="59" y="96" width="46" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Two">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Da-vU-BNf">
+                                        <rect key="frame" x="59" y="144" width="265" height="157"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWR-bA-fVF" userLabel="Button - Button Three">
+                                                <rect key="frame" x="20" y="64" width="46" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="Three">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="kWR-bA-fVF" firstAttribute="width" secondItem="mJ4-4w-Uz2" secondAttribute="width" id="5P1-0X-rrJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Da-vU-BNf" secondAttribute="trailing" id="5TP-uS-Ihn"/>
+                                    <constraint firstItem="lJe-wj-pUe" firstAttribute="width" secondItem="mJ4-4w-Uz2" secondAttribute="width" id="7ky-9v-qNd"/>
+                                    <constraint firstAttribute="trailing" secondItem="lJe-wj-pUe" secondAttribute="trailing" constant="165" id="Uyt-Xd-R1m"/>
+                                    <constraint firstAttribute="width" constant="384" id="V44-J0-UBK"/>
+                                    <constraint firstItem="lJe-wj-pUe" firstAttribute="leading" secondItem="IaN-a8-OBT" secondAttribute="leading" constant="59" id="iLq-Jg-yg5"/>
+                                </constraints>
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5lj-I9-12D">
-                                <rect key="frame" x="347" y="687" width="118" height="34"/>
+                                <rect key="frame" x="267" y="551" width="118" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
                                     <action selector="didChangeSliderValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="vO3-k2-hVd"/>
                                 </connections>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="kWR-bA-fVF" firstAttribute="width" secondItem="mJ4-4w-Uz2" secondAttribute="width" id="1d4-EA-QVf"/>
-                            <constraint firstItem="kWR-bA-fVF" firstAttribute="width" secondItem="lJe-wj-pUe" secondAttribute="width" id="gXm-fd-gfI"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonWidthSlider" destination="5lj-I9-12D" id="OV7-au-zvJ"/>
-                        <outlet property="firstButtonWidthConstraint" destination="Voe-Qu-2s1" id="CQf-b6-Re5"/>
+                        <outlet property="containerView" destination="IaN-a8-OBT" id="SvX-wF-UwF"/>
+                        <outlet property="containerWidthConstraint" destination="V44-J0-UBK" id="sZv-iC-Zsx"/>
+                        <outlet property="containerWidthSlider" destination="5lj-I9-12D" id="rWa-TB-WsG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
